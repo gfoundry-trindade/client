@@ -15,12 +15,12 @@ final class OpenAI
         return self::factory()
             ->withApiKey($apiKey)
             ->withOrganization($organization)
-            ->withHttpHeader('OpenAI-Beta', 'assistants=v1')
+            ->withHttpHeader('OpenAI-Beta', 'assistants=v2')
             ->make();
     }
 
     /**
-     * Creates a new factory instance to configure a custom Open AI Client
+     * Creates a new factory instance to configure a custom Open AI Client.
      */
     public static function factory(): Factory
     {
